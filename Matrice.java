@@ -15,7 +15,7 @@ public class Matrice{
 
     /**
      * Stampa la matrice
-     * @param matrice da popolare
+     * @param matrice da stampare
      * @return void
      */
     public static void stampaMatrice(int [][] m){
