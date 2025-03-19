@@ -16,9 +16,9 @@ public class Matrice{
      * @return void
      */
     public void pitagora(){
-        for (int i = 0; i < this.matrice.length; i++){
-            for (int j = 0; j < this.matrice[i].length; j++){
-                this.matrice[i][j] = (i + 1) * (j + 1);
+        for (int i = 0; i < matrice.length; i++){
+            for (int j = 0; j < matrice[i].length; j++){
+                matrice[i][j] = (i + 1) * (j + 1);
             } 
         }
     }
@@ -29,9 +29,9 @@ public class Matrice{
      * @return void
      */
     public void stampaMatrice(){
-        for (int i = 0; i < this.matrice.length; i++){
-            for (int j = 0; j < this.matrice[i].length; j++){
-                System.out.printf("%4d" , this.matrice[i][j]);
+        for (int i = 0; i < matrice.length; i++){
+            for (int j = 0; j < matrice[i].length; j++){
+                System.out.printf("%4d" , matrice[i][j]);
             } 
             System.out.println(); 
         }
@@ -45,9 +45,9 @@ public class Matrice{
     public void stampaMatriceSB() {
         // Crea la matrice tramite StringBuilder
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < this.matrice.length; i++) {
-            for (int j = 0; j < this.matrice[i].length; j++) {
-                sb.append(String.format("%4d", this.matrice[i][j]));
+        for (int i = 0; i < matrice.length; i++) {
+            for (int j = 0; j < matrice[i].length; j++) {
+                sb.append(String.format("%4d", matrice[i][j]));
             }
             sb.append(System.lineSeparator()); // Aggiungi una nuova linea alla fine di ogni riga
         }
